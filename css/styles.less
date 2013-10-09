@@ -1,0 +1,234 @@
+@import "mixin";
+
+body, h1, h2, h3, h4, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+
+@device-width: 2050px;
+
+
+@font-face {
+  font-family: 'hevletica';
+  src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'syntax';
+  src: url('../fonts/Syntax.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'helvetica-blext';
+  src: url('../fonts/helvetica_neue_black_extended.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'helvetica-boldcons';
+  src: url('../fonts/helvetica_neue_condensed_bold.ttf') format('truetype');
+}
+
+.app-icons {
+  background-image: url('pics/app-icons.png');
+  background-repeat: no-repeat;
+
+  &.right-arrow {
+    position: absolute;
+    top: 23px;
+    right: 24px;
+    padding: 3px 44px 0 0;
+    height: 62px;
+    background-position: 0 0;
+  }
+}
+
+
+
+header {
+  .clearfix;
+
+  padding-bottom: 165px;
+
+  .logo {
+    float: left;
+
+    .header-logo {
+      height: 0;
+      text-indent: -9999px;
+    }
+  }
+
+  .doctor-info {
+    float: left;
+    padding: 25px 20px 0 45px;
+    //width: 643px;
+
+    h2 {
+      color: #003e7e;
+      font: 400 48px/56px 'helvetica-blext';
+    }
+
+    .description {
+      padding-bottom: 4px;
+      color: #003e7e;
+      font: 400 36px/34px 'helvetica-boldcons';
+    }
+
+    .period {
+      color: #00aeef;
+      font: 400 36px/42px 'helvetica-boldcons';
+    }
+  }
+
+
+}
+
+.main-wrapper {
+  .clearfix;
+
+  height: 1413px;
+  width: @device-width;
+
+  .main-content {
+    float: left;
+    width: 1168px;
+  }
+
+  .question-wrapper {
+    float: left;
+    width: 880px;
+
+    h2 {
+      margin-bottom: -10px;
+      padding: 0 0 40px 0;
+      border-bottom: 2px solid #e6e6e6;
+      border-left: 2px solid #e6e6e6;
+    }
+
+    .question-list {
+
+      padding: 0;
+
+      li {
+        position: relative;
+        margin-bottom: 2px;
+        padding: 0 38px 0 72px;
+        min-height: 165px;
+        box-sizing: border-box;
+
+
+
+        background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 88%,#f1f1f1 99%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+        background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 88%,#f1f1f1 99%,#f4f4f4 100%); /* W3C */
+        border-left: 2px solid #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+
+        a {
+
+          display: table-cell;
+          vertical-align: middle;
+          height: 156px;
+          width: 880px;
+
+          color: #003e7e;
+          font: 400 38px 'helvetica-boldcons';
+          text-decoration: none;
+
+          .copyright {
+            font-size: 22px;
+          }
+        }
+
+        .question-index {
+          position: absolute;
+          bottom: -6px;
+          right: 6px;
+          color: #ffffff;
+          font: 400 80px 'helvetica-blext';
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 0 73px ;
+
+  .video-frame {
+    margin-bottom: 25px;
+
+    .splash {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .help-message {
+        position: absolute;
+        padding-left: 40px;
+        height: 138px;
+        right: 0;
+        bottom: 5px;
+        left: 0;
+        background: url('pics/help-message-bg.png') 0 0 no-repeat;
+
+        a  {
+          position: relative;
+          display: block;
+          color: #ffffff;
+          font: 400 48px/105px 'helvetica-blext';
+        }
+      }
+    }
+
+    .video-player {
+      display: none;
+      width: 1024px;
+      height: 770px;
+    }
+  }
+
+  .additional-info {
+    margin-left: -5px;
+    color: #003e7e;
+    font: 400 30px 'helvetica-boldcons';
+  }
+
+  .date-time {
+    margin-left: -5px;
+    color: #00aeef;
+    font: 400 30px 'helvetica-boldcons';
+  }
+}
+
+footer {
+  .clearfix;
+
+  padding: 35px 60px 35px 66px;
+  width: @device-width;
+  box-sizing: border-box;
+  border-top: 2px solid #e6e6e6;
+
+  p {
+    float: left;
+    width: 1520px;
+    color: #898989;
+    font: 400 23px 'syntax';
+  }
+
+  .copyright {
+    float: left;
+  }
+
+  .header-logo-wrapper {
+    float: right;
+    margin-left: 256px;
+    margin-top: -2px;
+  }
+}
