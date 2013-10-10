@@ -11,8 +11,6 @@ ul {
 
 
 @device-width: 2050px;
-
-
 @font-face {
   font-family: 'hevletica';
   src: url('../fonts/HelveticaNeue.ttf') format('truetype');
@@ -33,6 +31,8 @@ ul {
   src: url('../fonts/helvetica_neue_condensed_bold.ttf') format('truetype');
 }
 
+/* css without sizes*/
+
 .app-icons {
   background-image: url('pics/app-icons.png');
   background-repeat: no-repeat;
@@ -52,7 +52,6 @@ ul {
 header {
   .clearfix;
 
-  padding-bottom: 165px;
 
   .logo {
     float: left;
@@ -65,23 +64,23 @@ header {
 
   .doctor-info {
     float: left;
-    padding: 25px 20px 0 45px;
-    //width: 643px;
 
     h2 {
       color: #003e7e;
-      font: 400 48px/56px 'helvetica-blext';
+      font-weight: 400;
+      font-family: 'helvetica-blext';
     }
 
     .description {
-      padding-bottom: 4px;
       color: #003e7e;
-      font: 400 36px/34px 'helvetica-boldcons';
+      font-weight: 400;
+      font-family: 'helvetica-boldcons';
     }
 
     .period {
       color: #00aeef;
-      font: 400 36px/42px 'helvetica-boldcons';
+      font-weight: 400;
+      font-family: 'helvetica-boldcons';
     }
   }
 
@@ -91,21 +90,14 @@ header {
 .main-wrapper {
   .clearfix;
 
-  height: 1413px;
-  width: @device-width;
-
   .main-content {
     float: left;
-    width: 1168px;
   }
 
   .question-wrapper {
     float: left;
-    width: 880px;
 
     h2 {
-      margin-bottom: -10px;
-      padding: 0 0 40px 0;
       border-bottom: 2px solid #e6e6e6;
       border-left: 2px solid #e6e6e6;
     }
@@ -116,9 +108,6 @@ header {
 
       li {
         position: relative;
-        margin-bottom: 2px;
-        padding: 0 38px 0 72px;
-        min-height: 165px;
         box-sizing: border-box;
 
 
@@ -128,16 +117,216 @@ header {
         border-left: 2px solid #e6e6e6;
         border-bottom: 2px solid #e6e6e6;
 
+        &.active {
+         /* background:url('pics/question-active-bg-img.png') 0 center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6ce39), color-stop(8%,#9ecd42), color-stop(22%,#8bc957), color-stop(34%,#74c470), color-stop(64%,#36b8b4), color-stop(76%,#1fb4cd), color-stop(89%,#0bb0e3), color-stop(100%,#00aeef)); // Chrome,Safari4+
+          background:url('pics/question-active-bg-img.png') 0 center no-repeat, linear-gradient(to bottom, #a6ce39 0%,#9ecd42 8%,#8bc957 22%,#74c470 34%,#36b8b4 64%,#1fb4cd 76%,#0bb0e3 89%,#00aeef 100%); // W3C
+          //background-image: url('pics/app-icons.png');
+          -webkit-box-shadow: inset 9px 9px 30px -9px #000;
+          box-shadow: inset 9px 9px 30px -9px #000;
+          */
+          background: url('pics/active-bg.png') 0 0 no-repeat;
+          border-left: none;
+        }
+
+
         a {
 
           display: table-cell;
           vertical-align: middle;
+
+          color: #003e7e;
+          font-weight: 400;
+          font-family: 'helvetica-boldcons';
+          text-decoration: none;
+
+          .copyright {
+
+          }
+        }
+
+        .question-index {
+          position: absolute;
+          color: rgba(255, 255, 255, .3);
+          font-weight: 400;
+          font-family: 'helvetica-blext';
+
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .video-frame {
+
+    .splash {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .help-message {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        left: 0;
+        background: url('pics/help-message-bg.png') 0 0 no-repeat;
+
+        a  {
+          position: relative;
+          display: block;
+          color: #ffffff;
+          font-weight: 400;
+          font-family: 'helvetica-blext';
+        }
+      }
+    }
+
+    .video-player {
+      display: none;
+    }
+  }
+
+  .additional-info {
+    margin-left: -5px;
+    color: #003e7e;
+    font-weight: 400;
+    font-family: 'helvetica-boldcons';
+  }
+
+  .date-time {
+    margin-left: -5px;
+    color: #00aeef;
+    font-weight: 400;
+    font-family: 'helvetica-boldcons';
+  }
+}
+
+footer {
+  .clearfix;
+
+  box-sizing: border-box;
+  border-top: 2px solid #e6e6e6;
+
+  p {
+    float: left;
+    color: #898989;
+    font-weight: 400;
+    font-family: 'syntax';
+  }
+
+  .copyright {
+    float: left;
+  }
+
+  .header-logo-wrapper {
+    float: right;
+    margin-top: -2px;
+  }
+}
+
+
+/*
+
+      css sizes for 2048 screen size
+
+
+
+*/
+@media screen and (max-width:2048px) {
+
+.app-icons {
+
+  &.right-arrow {
+    top: 23px;
+    right: 24px;
+    padding: 3px 44px 0 0;
+    height: 62px;
+  }
+}
+
+
+
+header {
+  .clearfix;
+
+  padding-bottom: 165px;
+
+  .logo {
+
+    .header-logo {
+    }
+
+    .logo-img {
+      width: 524px;
+      height: 193px;
+    }
+  }
+
+  .doctor-info {
+    padding: 25px 20px 0 45px;
+    //width: 643px;
+
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    .description {
+      padding-bottom: 4px;
+      font-size: 36px;
+      line-height: 34px;
+    }
+
+    .period {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+
+}
+
+.main-wrapper {
+  .clearfix;
+
+  height: 1413px;
+  width: 2048px;
+
+  .main-content {
+    width: 1168px;
+  }
+
+  .question-wrapper {
+    width: 880px;
+
+    h2 {
+      margin-bottom: -10px;
+      padding: 0 0 40px 0;
+    }
+
+    .question-list {
+
+      padding: 0;
+
+      li {
+        margin-bottom: 2px;
+        padding: 0 38px 0 72px;
+        min-height: 165px;
+
+        &.active {
+          padding-left: 74px;
+        }
+
+        a {
           height: 156px;
           width: 880px;
 
-          color: #003e7e;
-          font: 400 38px 'helvetica-boldcons';
-          text-decoration: none;
+          font-size: 38px;
 
           .copyright {
             font-size: 22px;
@@ -145,11 +334,9 @@ header {
         }
 
         .question-index {
-          position: absolute;
           bottom: -6px;
           right: 6px;
-          color: #ffffff;
-          font: 400 80px 'helvetica-blext';
+          font-size: 80px;
         }
       }
     }
@@ -163,32 +350,23 @@ header {
     margin-bottom: 25px;
 
     .splash {
-      position: relative;
 
       img {
-        width: 100%;
       }
 
       .help-message {
-        position: absolute;
         padding-left: 40px;
         height: 138px;
-        right: 0;
         bottom: 5px;
-        left: 0;
-        background: url('pics/help-message-bg.png') 0 0 no-repeat;
 
         a  {
-          position: relative;
-          display: block;
-          color: #ffffff;
-          font: 400 48px/105px 'helvetica-blext';
+          font-size: 48px;
+          line-height: 105px;
         }
       }
     }
 
     .video-player {
-      display: none;
       width: 1024px;
       height: 770px;
     }
@@ -196,39 +374,211 @@ header {
 
   .additional-info {
     margin-left: -5px;
-    color: #003e7e;
-    font: 400 30px 'helvetica-boldcons';
+    font-size: 30px;
   }
 
   .date-time {
     margin-left: -5px;
-    color: #00aeef;
-    font: 400 30px 'helvetica-boldcons';
+    font-size: 30px;
   }
 }
 
 footer {
-  .clearfix;
-
   padding: 35px 60px 35px 66px;
-  width: @device-width;
-  box-sizing: border-box;
-  border-top: 2px solid #e6e6e6;
+  width: 2048;
 
   p {
-    float: left;
     width: 1520px;
-    color: #898989;
-    font: 400 23px 'syntax';
+    font-size: 23px;
   }
 
   .copyright {
-    float: left;
   }
 
   .header-logo-wrapper {
-    float: right;
     margin-left: 256px;
     margin-top: -2px;
+  }
+}
+}
+
+
+
+/*
+
+      css sizes for 2048 screen size
+
+
+
+*/
+@media screen and (max-width:1024px) {
+
+  .app-icons {
+
+    &.right-arrow {
+      top: 11px;
+      right: 12px;
+      padding: 1px 22px 0 0;
+      height: 31px;
+      background-size: 20px 32px;
+    }
+  }
+
+
+
+  header {
+    .clearfix;
+
+    padding-bottom: 82px;
+
+    .logo {
+
+      .header-logo {
+      }
+
+      .logo-img {
+        width: 262px;
+        height: 96px;
+      }
+    }
+
+    .doctor-info {
+      padding: 12px 20px 0 22px;
+      //width: 643px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      .description {
+        padding-bottom: 2px;
+        font-size: 18px;
+        line-height: 17px;
+      }
+
+      .period {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+
+  }
+
+  .main-wrapper {
+    .clearfix;
+
+    height: 706px;
+    width: 1024px;
+
+    .main-content {
+      width: 584px;
+    }
+
+    .question-wrapper {
+      width: 440px;
+
+      h2 {
+        margin-bottom: -5px;
+        padding: 0 0 20px 0;
+      }
+
+      .question-list {
+
+        padding: 0;
+
+        li {
+          margin-bottom: 1px;
+          padding: 0 19px 0 36px;
+          min-height: 84px;
+
+          &.active {
+            padding-left: 37px;
+            background-size: 440px 84px;
+          }
+
+          a {
+            height: 78px;
+            width: 440px;
+
+            font-size: 19px;
+
+            .copyright {
+              font-size: 11px;
+            }
+          }
+
+          .question-index {
+            bottom: -3px;
+            right: 3px;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 0 36px ;
+
+    .video-frame {
+      margin-bottom: 12px;
+
+      .splash {
+
+        img {
+        }
+
+        .help-message {
+          padding-left: 20px;
+          height: 69px;
+          bottom: 2px;
+
+          a  {
+            font-size: 24px;
+            line-height: 52px;
+          }
+        }
+      }
+
+      .video-player {
+        width: 512px;
+        height: 385px;
+      }
+    }
+
+    .additional-info {
+      margin-left: -2px;
+      font-size: 15px;
+    }
+
+    .date-time {
+      margin-left: -2px;
+      font-size: 15px;
+    }
+  }
+
+  footer {
+    padding: 17px 30px 17px 33px;
+    width: 1024px;
+
+    p {
+      width: 760px;
+      font-size: 11px;
+    }
+
+    .copyright {
+    }
+
+    .header-logo-wrapper {
+      margin-left: 128px;
+      margin-top: -1px;
+
+      .header-logo-img {
+        width: 73px;
+        height: 27px;
+      }
+    }
   }
 }
