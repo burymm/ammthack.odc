@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.BoostanfarQA"
+        versionCode="10"
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Boostanfar QA</name>
+
+    <description>
+        Boostanfar QA application
+    </description>
+
+    <author href="https://build.phonegap.com" email="burymm@gmail.com">
+        Mikalai Bury
+    </author>
+
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+</widget>
