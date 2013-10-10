@@ -300,7 +300,7 @@ footer .header-logo-wrapper {
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 2px;
     padding: 0 38px 0 72px;
-    min-height: 165px;
+    min-height: 160px;
   }
   .main-wrapper .question-wrapper .question-list li.active {
     padding-left: 74px;
@@ -409,7 +409,7 @@ footer .header-logo-wrapper {
   }
   .main-wrapper {
     zoom: 1;
-    height: 706px;
+    height: 690px;
     width: 1024px;
   }
   .main-wrapper:before,
@@ -438,7 +438,7 @@ footer .header-logo-wrapper {
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 1px;
     padding: 0 19px 0 36px;
-    min-height: 84px;
+    min-height: 80px;
   }
   .main-wrapper .question-wrapper .question-list li.active {
     padding-left: 37px;
