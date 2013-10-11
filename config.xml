@@ -10,7 +10,7 @@
     <ios>
         <plist>
             <dict>
-                <key>UIViewControllerBasedStatusBarAppearance </key>
+                <key>UIViewControllerBasedStatusBarAppearance</key>
                 <string>NO</string>
             </dict>
         </plist>
