@@ -5,7 +5,17 @@
         versionCode="10"
         version   = "1.0.0">
 
-    <!-- versionCode is optional and Android only -->
+    <!-- ios only -->
+
+    <ios>
+        <plist>
+            <dict>
+                <key>UIViewControllerBasedStatusBarAppearance </key>
+                <string>NO</string>
+            </dict>
+        </plist>
+    </ios>
+    <!-- for all platform -->
 
     <name>Boostanfar QA</name>
 
@@ -23,4 +33,5 @@
 
     <gap:platform name="ios" />
     <gap:platform name="android" />
+
 </widget>
