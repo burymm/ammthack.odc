@@ -348,6 +348,7 @@ footer .header-logo-wrapper {
   footer {
     padding: 35px 60px 35px 66px;
     width: 2048;
+    height: 123px;
   }
   footer p {
     width: 1520px;
@@ -491,6 +492,7 @@ footer .header-logo-wrapper {
   footer {
     padding: 17px 30px 17px 33px;
     width: 1024px;
+    height: 63px;
   }
   footer p {
     width: 760px;
