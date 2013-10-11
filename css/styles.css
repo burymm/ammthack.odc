@@ -292,15 +292,15 @@ footer .header-logo-wrapper {
   }
   .main-wrapper .question-wrapper h2 {
     margin-bottom: -10px;
-    padding: 0 0 40px 0;
+    padding: 0 0 65px 0;
   }
   .main-wrapper .question-wrapper .question-list {
-    padding: 0;
+    padding: 7px 0 0 30px;
   }
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 2px;
-    padding: 0 38px 0 72px;
-    min-height: 160px;
+    padding: 0 10px 0 72px;
+    min-height: 166px;
   }
   .main-wrapper .question-wrapper .question-list li.active {
     padding-left: 74px;
@@ -353,6 +353,9 @@ footer .header-logo-wrapper {
     width: 1520px;
     font-size: 23px;
   }
+  footer .copyright {
+    width: 1924px;
+  }
   footer .header-logo-wrapper {
     margin-left: 256px;
     margin-top: -2px;
@@ -367,7 +370,7 @@ footer .header-logo-wrapper {
 */
 @media screen and (max-width: 1024px) {
   .app-icons.right-arrow {
-    top: 11px;
+    top: 14px;
     right: 12px;
     padding: 1px 22px 0 0;
     height: 31px;
@@ -409,7 +412,7 @@ footer .header-logo-wrapper {
   }
   .main-wrapper {
     zoom: 1;
-    height: 690px;
+    height: 705px;
     width: 1024px;
   }
   .main-wrapper:before,
@@ -429,16 +432,16 @@ footer .header-logo-wrapper {
     width: 440px;
   }
   .main-wrapper .question-wrapper h2 {
-    margin-bottom: -5px;
-    padding: 0 0 20px 0;
+    margin-bottom: -15px;
+    padding: 0 0 32px 0;
   }
   .main-wrapper .question-wrapper .question-list {
-    padding: 0;
+    padding: 3px 0 0 15px;
   }
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 1px;
-    padding: 0 19px 0 36px;
-    min-height: 80px;
+    padding: 0 0 0 36px;
+    min-height: 83px;
   }
   .main-wrapper .question-wrapper .question-list li.active {
     padding-left: 37px;
@@ -465,12 +468,13 @@ footer .header-logo-wrapper {
   }
   .content .video-frame .splash .help-message {
     padding-left: 20px;
-    height: 69px;
-    bottom: 2px;
+    height: 71px;
+    bottom: 5px;
+    background-size: 512px 383px;
   }
   .content .video-frame .splash .help-message a {
     font-size: 24px;
-    line-height: 52px;
+    line-height: 58px;
   }
   .content .video-frame .video-player {
     width: 512px;
@@ -491,6 +495,10 @@ footer .header-logo-wrapper {
   footer p {
     width: 760px;
     font-size: 11px;
+  }
+  footer .copyright {
+    margin-top: -2px;
+    width: 961px;
   }
   footer .header-logo-wrapper {
     margin-left: 128px;

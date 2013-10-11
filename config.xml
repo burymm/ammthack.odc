@@ -17,6 +17,10 @@
         Mikalai Bury
     </author>
 
+    <preference name="fullscreen" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+
+
     <gap:platform name="ios" />
     <gap:platform name="android" />
 </widget>
