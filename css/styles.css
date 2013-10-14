@@ -415,7 +415,7 @@ footer .header-logo-wrapper {
   }
   .main-wrapper {
     zoom: 1;
-    height: 705px;
+    height: 704px;
     width: 1024px;
   }
   .main-wrapper:before,
@@ -503,6 +503,7 @@ footer .header-logo-wrapper {
   footer p {
     width: 760px;
     font-size: 11px;
+    line-height: 15px;
   }
   footer .copyright {
     margin-top: -2px;

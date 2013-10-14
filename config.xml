@@ -15,8 +15,13 @@
             </dict>
         </plist>
     </ios>
+    <icon src="res/icons/ios/icon_57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="res/icons/ios/icon_114.png" gap:platform="ios" width="72" height="72" />
+    <icon src="res/icons/ios/icon_144.png" gap:platform="ios" width="114" height="114" />
     <!-- retina iPad support: PhoneGap 2.5.0+ only -->
-    <icon src="res/icons/ios/AEF0052_Icon_V1.ico" gap:platform="ios" width="144" height="144" />
+    <icon src="res/icons/ios/icon_144.png" gap:platform="ios" width="144" height="144" />
+
+    <icon src="icon_144.png" />
 
     <!-- for all platform -->
 
