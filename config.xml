@@ -15,6 +15,9 @@
             </dict>
         </plist>
     </ios>
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <icon src="res/icons/ios/AEF0052_Icon_V1.ico" gap:platform="ios" width="144" height="144" />
+
     <!-- for all platform -->
 
     <name>Boostanfar QA</name>

@@ -295,17 +295,19 @@ footer .header-logo-wrapper {
     padding: 0 0 65px 0;
   }
   .main-wrapper .question-wrapper .question-list {
-    padding: 7px 0 0 30px;
+    padding: 0 0 0 0;
   }
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 2px;
-    padding: 0 10px 0 72px;
+    padding: 0 10px 0 0;
     min-height: 166px;
   }
-  .main-wrapper .question-wrapper .question-list li.active {
+  .main-wrapper .question-wrapper .question-list li.active a {
     padding-left: 74px;
   }
   .main-wrapper .question-wrapper .question-list li a {
+    padding-right: 30px;
+    padding-left: 72px;
     height: 156px;
     width: 880px;
     font-size: 38px;
@@ -437,18 +439,22 @@ footer .header-logo-wrapper {
     padding: 0 0 32px 0;
   }
   .main-wrapper .question-wrapper .question-list {
-    padding: 3px 0 0 15px;
+    padding: 0 0 0 0;
   }
   .main-wrapper .question-wrapper .question-list li {
     margin-bottom: 1px;
-    padding: 0 0 0 36px;
+    padding: 0 0 0 0;
     min-height: 83px;
   }
   .main-wrapper .question-wrapper .question-list li.active {
-    padding-left: 37px;
     background-size: 440px 84px;
   }
+  .main-wrapper .question-wrapper .question-list li.active a {
+    padding-left: 37px;
+  }
   .main-wrapper .question-wrapper .question-list li a {
+    padding-right: 15px;
+    padding-left: 36px;
     height: 78px;
     width: 440px;
     font-size: 19px;

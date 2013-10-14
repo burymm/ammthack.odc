@@ -311,18 +311,22 @@ header {
 
     .question-list {
 
-      padding: 7px 0 0 30px;
+      padding: 0 0 0 0;
 
       li {
         margin-bottom: 2px;
-        padding: 0 10px 0 72px;
+        padding: 0 10px 0 0;
         min-height: 166px;
 
         &.active {
-          padding-left: 74px;
+          a {
+            padding-left: 74px;
+          }
         }
 
         a {
+          padding-right: 30px;
+          padding-left: 72px;
           height: 156px;
           width: 880px;
 
@@ -488,19 +492,23 @@ footer {
 
       .question-list {
 
-        padding: 3px 0 0 15px;
+        padding: 0 0 0 0;
 
         li {
           margin-bottom: 1px;
-          padding: 0 0 0 36px;
+          padding: 0 0 0 0;
           min-height: 83px;
 
           &.active {
-            padding-left: 37px;
             background-size: 440px 84px;
+            a {
+              padding-left: 37px;
+            }
           }
 
           a {
+            padding-right: 15px;
+            padding-left: 36px;
             height: 78px;
             width: 440px;
 
