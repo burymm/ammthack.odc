@@ -21,15 +21,13 @@
     <!-- retina iPad support: PhoneGap 2.5.0+ only -->
     <icon src="res/icons/ios/icon_144.png" gap:platform="ios" width="144" height="144" />
 
-    <gap:splash src="splash/ios/splash_screen_1024_768.png" gap:platform="ios" width="1024" height="768" />
-    <gap:splash src="splash/ios/splash_screen_2048_1536.png" gap:platform="ios" width="2048" height="1536" />
-
-
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png.png" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png.png" gap:platform="ios" width="2048" height="1536" />
 
 
     <!-- for all platform -->
     <icon src="icon_144.png" />
-    <gap:splash src="res/splash/splash_screen.png" />
+    <gap:splash src="splash.png" />
 
     <name>Boostanfar QA</name>
 
@@ -46,6 +44,6 @@
 
 
     <gap:platform name="ios" />
-    <gap:platform name="android" />
+    <!--<gap:platform name="android" />-->
 
 </widget>
